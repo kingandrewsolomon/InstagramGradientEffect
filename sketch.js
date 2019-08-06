@@ -25,7 +25,7 @@ function lerpColor(color1, color2, amt) {
     return Color.rgb(l0, l1, l2);
 }
 
-function setup() {
+function main() {
     if (process.argv[2]) {
         let imgFile = process.argv[2];
         let name = imgFile.slice(0, -4) + '_gradient.png';
@@ -95,4 +95,4 @@ function setup() {
 
 }
 
-setup();
+main();
